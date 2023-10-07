@@ -19,7 +19,7 @@ open class OptimizerConfig(
     /**
      *  Flag to indicate whether to convert all images to specific format, null indicate convert can't working
      */
-    var targetFormat: String? = null,
+    var targetFormat: String = "webp",
 
     /**
      * A list of resource file or directory names that do not need to be convert.
