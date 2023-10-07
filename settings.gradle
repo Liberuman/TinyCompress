@@ -1,0 +1,30 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        mavenLocal()
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+    }
+
+    resolutionStrategy{
+        eachPlugin{
+            if (requested.id.id == "com.sxu.plugins.tinycompress") {
+                useModule("com.sxu.plugins:tinycompress:${requested.version}")
+            }
+        }
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+    }
+}
+
+rootProject.name = "TinyCompress"
+include ':app'
+include ':tinycompress'
