@@ -25,7 +25,7 @@ To use the Image Optimizer Library in your project, follow these steps:
    maven { url 'https://jitpack.io' }
    }
    dependencies {
-   classpath 'com.github.liberuman.tinycompress:tinycompress:0.1'
+   classpath 'com.sxu.plugins.tinycompress:0.1'
    }
    }
 2. Apply the plugin in the  build.gradle  file of your app module:
@@ -43,12 +43,13 @@ apiKey 'xxxx'
 Refer to the options description below for more details on configuration options.
 
 After configuring, sync your project. You will find two tasks,  compressImage  and  convertImage , in the Gradle panel on the right side of Android Studio. Double-click on them to compress and convert images. You can also execute the tasks directly using Gradle commands:
-bash
-# Compress images
-./gradlew compressImage
 
-# Convert images
-./gradlew convertImage
+      // Compress images
+      ./gradlew compressImage
+
+      // Convert images
+      ./gradlew convertImage
+
 ## Configuration Options
 The following configuration options are available:
 
