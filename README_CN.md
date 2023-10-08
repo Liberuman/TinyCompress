@@ -1,4 +1,4 @@
-[![image](https://jitpack.io/v/Liberuman/ShadowDrawable.svg)](https://jitpack.io/Liberuman/TinyCompress)
+[![image](https://jitpack.io/v/Liberuman/TinyCompress.svg)](https://jitpack.io/Liberuman/TinyCompress)
 ![image](https://img.shields.io/badge/build-passing-brightgreen.svg)
 [![image](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/Liberuman/TinyCompress/blob/master/LICENSE)
 
