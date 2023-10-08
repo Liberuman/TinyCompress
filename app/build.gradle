@@ -1,7 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'tinycompress'
+    //id 'tinycompress'
 }
 
 android {
@@ -44,9 +44,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 }
 
-pluginConfig {
-    apiKey 'tSBgVz9j4txgrVLRP5t1JFZWrx5xLsy7'
-    compressRatioThreshold 20
-    targetFormat "png"
-    supportFormat 4
-}
+//pluginConfig {
+//    apiKey 'tSBgVz9j4txgrVLRP5t1JFZWrx5xLsy7'
+//    compressRatioThreshold 20
+//    targetFormat "png"
+//    supportFormat 4
+//}
