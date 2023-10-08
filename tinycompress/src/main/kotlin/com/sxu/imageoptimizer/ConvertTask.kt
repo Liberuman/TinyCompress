@@ -26,6 +26,12 @@ open class ConvertTask : OptimizerTask() {
         targetDirectories: List<String>,
         config: OptimizerConfig
     ) {
+        // Convert to target format if requested
+        if (config.targetFormat.isNullOrBlank()) {
+            log("targetFormat parameter is not configured!")
+            return
+        }
+
         for (directory in targetDirectories) {
             val file = File(directory)
             if (!file.exists() || !file.isDirectory) {
@@ -49,5 +55,6 @@ open class ConvertTask : OptimizerTask() {
                     }
                 }
         }
+        log("All images have been converted to ${config.targetFormat}...")
     }
 }

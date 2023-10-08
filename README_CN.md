@@ -31,7 +31,7 @@
         maven { url 'https://jitpack.io' }
    
         dependencies {
-            classpath 'com.github.liberuman.tinycompress:tinycompress:0.1'
+            classpath 'com.github.Liberuman:TinyCompress:0.2'
         }
     }
 

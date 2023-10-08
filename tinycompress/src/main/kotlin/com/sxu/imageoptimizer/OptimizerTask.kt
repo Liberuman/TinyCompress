@@ -67,13 +67,8 @@ abstract class OptimizerTask : DefaultTask() {
                 GsonBuilder().setPrettyPrinting().create().toJson(waitOptimizerDirs)
             }"
         )
-        // Convert to target format if requested
-        if (!config.targetFormat.isNullOrBlank()) {
-            convertImage(waitOptimizerDirs, config)
-            log("All images have been converted to ${config.targetFormat}...")
-            return
-        }
 
+        convertImage(waitOptimizerDirs, config)
         compressImage(waitOptimizerDirs, config)
         log("Task finished!")
     }
